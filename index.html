@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Double Website</title>
+</head>
+<body>
+  <main>
+    <article data-index="0" data-status="active">
+      <section>
+        <h1>Home</h1>
+        <button class="article-nav-button" type="button" onclick="handleLeftClick()">Left</button>
+        <button class="article-nav-button" type="button" onclick="handleRightClick()">Right</button>
+      </section>
+    </article>
+    <article data-index="1" data-status="inactive">
+      <section>
+        <h1>Right</h1>
+        <button class="article-nav-button" type="button" onclick="handleLeftClick()">Go back</button>
+      </section>
+    </article>
+    <article data-index="2" data-status="inactive">
+      <section>
+        <h1>Left</h1>
+        <button class="article-nav-button" type="button" onclick="handleRightClick()">Go back</button>
+      </section>
+    </article>
+  </main>
+  <script src="index.js"> </script>
+</body>
+</html>
