@@ -4,9 +4,9 @@ body {
   font-family: sans-serif;
 }
 
-main {
+/* main {
   height: 100vh;
-}
+} */
 
 main > article {
   height: 100vh;
