@@ -10,12 +10,42 @@ main {
 
 main > article {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+main > article:first-child {
   background: #80ffd4;
   color: #7c68ee;
 }
+
+/* start - from snap scroll */
+
+main > article > section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #7c68ee;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+main > article > section:nth-child(odd) {
+  background: #80ffd4;
+}
+
+main > article > section > div {
+  font-size: 80px;
+  font-weight: 700;
+  color: #80ffd4
+}
+
+main > article > section:nth-child(odd) > div {
+  color: #7c68ee
+}
+
+/* end - from snap scroll */
 
 main > article > section > button {
   font-size: 80px;
@@ -24,7 +54,7 @@ main > article > section > button {
 
 main > article:nth-child(odd) {
   background: #7c68ee;
-  color:#fff
+  /* color:#80ffd4 */
 }
 
 main > article {
