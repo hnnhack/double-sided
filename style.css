@@ -96,15 +96,25 @@ main > article[data-status="becoming-active-from-after"] {
 .close-button {
   background: transparent;
   color: #00008b;
-  display: block;
   position: sticky;
   /* these below 2 line has to be arrange */
-  top: 50px;
-  left: 1200px;
+  top: 2rem;
+  left: 45rem;
   font-size: 28px;
   font-weight: bold;
-  padding: 0 7px;
+  padding: 0 0.5rem;
   border-radius: 50%;
-  border: 1%;
   border-color: #00008b;
+}
+
+/* Go Top Button  */
+.go-top {
+  background: transparent;
+  color: #00008b;
+  position: sticky;
+  /* these below 2 line has to be arrange */
+  top: 38rem;
+  left: 0.1rem;
+  font-size: 28px;
+  text-decoration: none;
 }
