@@ -90,3 +90,21 @@ main > article[data-status="becoming-active-from-after"] {
   transform: translateX(100%);
   transition: none;
 }
+
+/* close-button  */
+
+.close-button {
+  background: transparent;
+  color: #00008b;
+  display: block;
+  position: sticky;
+  /* these below 2 line has to be arrange */
+  top: 50px;
+  left: 1200px;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 7px;
+  border-radius: 50%;
+  border: 1%;
+  border-color: #00008b;
+}
