@@ -99,8 +99,8 @@ main > article[data-status="becoming-active-from-after"] {
   position: sticky;
   /* these below 2 line has to be arrange */
   top: 2rem;
-  left: 45rem;
-  font-size: 28px;
+  left: 75rem;
+  font-size: 48px;
   font-weight: bold;
   padding: 0 0.5rem;
   border-radius: 50%;
