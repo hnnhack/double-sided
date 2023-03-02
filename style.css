@@ -4,10 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-/* main {
-  height: 100vh;
-} */
-
 main > article {
   height: 100vh;
   overflow-y: scroll;
@@ -101,7 +97,7 @@ main > article[data-status="becoming-active-from-after"] {
   top: 2rem;
   left: 75rem;
   font-size: 48px;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 0 0.5rem;
   border-radius: 50%;
   border-color: #00008b;
@@ -117,4 +113,10 @@ main > article[data-status="becoming-active-from-after"] {
   left: 75rem;
   font-size: 38px;
   text-decoration: none;
+}
+
+/* SCROLL UP behavior smooth  */
+
+* {
+  scroll-behavior: smooth !important;
 }
