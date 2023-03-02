@@ -113,8 +113,8 @@ main > article[data-status="becoming-active-from-after"] {
   color: #00008b;
   position: sticky;
   /* these below 2 line has to be arrange */
-  top: 38rem;
-  left: 0.1rem;
-  font-size: 28px;
+  top: 36rem;
+  left: 75rem;
+  font-size: 38px;
   text-decoration: none;
 }
