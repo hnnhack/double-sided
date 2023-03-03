@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth !important; /* SCROLL UP behavior smooth */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,8 +11,11 @@ body {
 
 main > article {
   height: 100vh;
+  width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  position: absolute; /* important */
+  transition: transform 400ms ease;  
 }
 
 main > article:first-child {
@@ -15,11 +23,11 @@ main > article:first-child {
   color: #7c68ee;
 }
 
-/* start - from snap scroll */
-
+/* beginning - from snap scroll */
 main > article > section {
   height: 100vh;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   background: #7c68ee;
@@ -32,32 +40,46 @@ main > article > section:nth-child(odd) {
 }
 
 main > article > section > div {
+  height: 80vh;
+  width: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
   font-size: 80px;
   font-weight: 700;
-  color: #80ffd4
+  color: #80ffd4;
+  border: 0.4rem dashed;
+  padding: 4rem;
+}
+
+.footer {
+  height: 80vh;
+  width: 50vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 700;
+  color: #80ffd4;
+  border: 0.4rem dashed;
+  padding: 2rem;
 }
 
 main > article > section:nth-child(odd) > div {
   color: #7c68ee
 }
-
 /* end - from snap scroll */
 
-main > article > section > button {
+main > article > section > div > button {
+  margin: 1rem;
   font-size: 80px;
   font-weight: 700;
 }
 
 main > article:nth-child(odd) {
   background: #7c68ee;
-  /* color:#80ffd4 */
-}
-
-main > article {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: transform 400ms ease;  
 }
 
 main > article[data-status="inactive"] {
@@ -88,19 +110,15 @@ main > article[data-status="becoming-active-from-after"] {
 }
 
 /* close-button  */
-
 .close-button {
   background: transparent;
   color: #00008b;
   position: sticky;
+  position: -webkit-sticky;
   /* these below 2 line has to be arrange */
   top: 2rem;
   left: 75rem;
-  font-size: 48px;
-  /* font-weight: bold; */
-  padding: 0 0.5rem;
-  border-radius: 50%;
-  border-color: #00008b;
+  font-size: 40px;
 }
 
 /* Go Top Button  */
@@ -108,15 +126,10 @@ main > article[data-status="becoming-active-from-after"] {
   background: transparent;
   color: #00008b;
   position: sticky;
+  position: -webkit-sticky;
   /* these below 2 line has to be arrange */
   top: 36rem;
   left: 75rem;
   font-size: 38px;
   text-decoration: none;
-}
-
-/* SCROLL UP behavior smooth  */
-
-* {
-  scroll-behavior: smooth !important;
 }
