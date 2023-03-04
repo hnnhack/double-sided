@@ -35,3 +35,46 @@ const handleRightClick = () => {
     activeIndex = nextIndex;
   });
 }
+
+// js text type animation 
+const typed = new Typed('#type-space', {
+  strings: ['Websites!?', 'Web apps!?', 'Web services!?'],
+  typeSpeed: 35,
+  startDelay: 500,
+  backDelay: 1000,
+  backSpeed: 35,
+  loop: true,
+  loopCount: 200,
+  fadeOut: true,
+  showCursor: false
+  // cursorChar: '...'
+
+});
+
+const type = new Typed('#hmz-space', {
+  strings: ['Welcome!', 'Network Support!?', 'Desktop Support!?'],
+  typeSpeed: 10,
+  startDelay: 0,
+  backDelay: 1000,
+  backSpeed: 0,
+  loop: true,
+  loopCount: 200,
+  fadeOut: true,
+  showCursor: false
+  // cursorChar: '...'
+
+});
+
+const typing = new Typed('#htj-space', {
+  strings: ['Welkom!', 'Websites!?', 'Web apps!?', 'Web services!?'],
+  typeSpeed: 10,
+  startDelay: 0,
+  backDelay: 1000,
+  backSpeed: 0,
+  loop: true,
+  loopCount: 200,
+  fadeOut: true,
+  showCursor: false
+  // cursorChar: '...'
+
+});

@@ -39,43 +39,84 @@ main > article > section:nth-child(odd) {
   background: #80ffd4;
 }
 
-main > article > section > div {
-  height: 80vh;
-  width: 80vh;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 80px;
-  font-weight: 700;
-  color: #80ffd4;
-  border: 0.4rem dashed;
-  padding: 4rem;
-}
-
-.footer {
-  height: 80vh;
-  width: 50vh;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 80px;
-  font-weight: 700;
-  color: #80ffd4;
-  border: 0.4rem dashed;
-  padding: 2rem;
-}
-
 main > article > section:nth-child(odd) > div {
   color: #7c68ee
 }
 /* end - from snap scroll */
 
-main > article > section > div > button {
-  margin: 1rem;
-  font-size: 80px;
+main > article > section > div {
+  height: 90vh;
+  width: 90vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 4rem;
   font-weight: 700;
+  color: #00008b;
+  border-radius: 3%;
+  /* border: 0.2rem dashed; */
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  height: 90vh;
+  width: 50vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #00008b;
+  /* border: 0.4rem dashed; */
+  padding: 2rem;
+  box-shadow: 4rem;
+}
+
+/* image area  */
+main > article > section > .article-image-section {
+  /* background-image: url("https://qph.cf2.quoracdn.net/main-qimg-68b659aeaa28099560b1bd2992dff4af.webp"); */
+  background-image: url("https://www.lystloc.com/blog/wp-content/uploads/2022/12/ezgif.com-gif-maker-55.webp");
+}
+
+main > article > section > .article-image-section {
+  background-position: center;
+  background-size: cover;
+}
+/* end image area  */
+
+/* home page gallery text  */
+.home-gallery{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: auto;
+  text-align: center;
+}
+
+/* home page gallery buttons  */
+.article-div-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #80ffd4;
+  color: #00008b;
+  border-radius: 5%;
+  box-shadow: 
+  inset 0 -3em 3em rgba(0, 0, 0, 0.1), 
+  0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
 }
 
 main > article:nth-child(odd) {
@@ -116,9 +157,10 @@ main > article[data-status="becoming-active-from-after"] {
   position: sticky;
   position: -webkit-sticky;
   /* these below 2 line has to be arrange */
-  top: 2rem;
-  left: 75rem;
-  font-size: 40px;
+  top: 5%;
+  left: 95%;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 /* Go Top Button  */
@@ -128,8 +170,30 @@ main > article[data-status="becoming-active-from-after"] {
   position: sticky;
   position: -webkit-sticky;
   /* these below 2 line has to be arrange */
-  top: 36rem;
-  left: 75rem;
-  font-size: 38px;
+  top: 80%;
+  left: 95%;
+  font-size: 2rem;
   text-decoration: none;
+  padding: 1rem;
+}
+
+@media(max-width: 1200px) {  
+  main > article > section {
+    flex-direction: column-reverse;
+  }
+  
+  main > article > section > div {
+    height: 40vh;
+    flex-flow: column wrap;
+    font-size: 2rem;
+  }
+  
+  .footer {
+    height: 30vh;
+    flex-flow: column wrap;
+  }
+  
+  .article-div-button {
+    font-size: 2rem;
+  }
 }

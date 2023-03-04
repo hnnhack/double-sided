@@ -13,23 +13,18 @@
     <article data-index="0" data-status="active">
       <section>
         <div>
-          <span>
-            Left
-          </span>
-          <span>
-            Side
-          </span> 
-          <button class="article-nav-button" type="button" onclick="handleLeftClick()"> 
-            Left
-          </button>
+          <span class="home-gallery" id="hmz-space"></span> 
+          <div class="article-div-button" onclick="handleLeftClick()"> 
+            <i class="fas fa-arrow-left fa-beat-fade"></i>
+            &nbsp;Bezoek ons
+          </div>
         </div>
         <div>
-          <span>
-            Right side
-          </span>
-          <button class="article-nav-button" type="button" onclick="handleRightClick()">
-            Right
-          </button>
+          <span class="home-gallery" id="htj-space"></span>
+          <div class="article-div-button" onclick="handleRightClick()">
+            Bezoek ons&nbsp;
+            <i class="fas fa-arrow-right fa-beat-fade"></i>
+          </div>
         </div>
       </section>
       <section>
@@ -39,35 +34,33 @@
       </section> 
     </article>
     <article data-index="1" data-status="inactive">
-      <!-- <button type="button" class="close-button" onclick="handleLeftClick()">x</button> -->
-      <i class="far fa-times-circle close-button" onclick="handleLeftClick()"></i>
-      <!-- <i class="fas fa-times" onclick="handleLeftClick()"></i> -->
+      <i class="fas fa-times  close-button" onclick="handleLeftClick()"></i>
       <a class="go-top" href="#web-home">
         <i class="fas fa-chevron-up"></i>
       </a>
       <section id="web-home">
-        <div>Welcome to Right</div>
-        <div>Image Area</div>
+        <div>Welkom!</div>
+        <div><span id="type-space"></span></div>
       </section>
       <section id="section-1">
         <div>Welcome!</div>
-        <div>Image Area</div>
+        <div class="article-image-section"></div>
       </section>
       <section id="section-2">
           <div>About Us</div>
-          <div>Image Area</div>
+          <div class="article-image-section"></div>
         </section>
       <section id="section-3">
           <div>Why Us?</div>
-          <div>Image Area</div>
+          <div class="article-image-section"></div>
         </section>
       <section id="section-4">
           <div>Our Projects</div>
-          <div>Image Area</div>
+          <div class="article-image-section"></div>
         </section>
       <section id="section-5">
           <div>Our Team</div>
-          <div>Image Area</div>
+          <div class="article-image-section"></div>
         </section>
       <section id="section-5">
         <div class="footer">This is Footer</div>
@@ -76,35 +69,33 @@
     </section>
     </article>
     <article data-index="2" data-status="inactive">
-      <!-- <button type="button" class="close-button" onclick="handleRightClick()">x</button> -->
-      <i class="far fa-times-circle close-button" onclick="handleRightClick()"></i>
-      <!-- <i class="fas fa-times" onclick="handleRightClick()"></i> -->
+      <i class="fas fa-times close-button" onclick="handleRightClick()"></i>
       <a class="go-top" href="#net-home">
         <i class="fas fa-chevron-up"></i>
       </a>
       <section id="net-home">
-        <div>Welcome to Left</div>
-        <div>Image Area</div>
+        <div>Welkom!</div>
+        <div class="article-image-section"></div>
       </section>
       <section id="section-1">
         <div>Welcome!</div>
-        <div>Image Area</div>
+        <div class="article-image-section"></div>
       </section>
       <section id="section-2">
           <div>About Us</div>
-          <div>Image Area</div>
+          <div class="article-image-section"></div>
         </section>
       <section id="section-3">
           <div>Why Us?</div>
-          <div>Image Area</div>
+          <div class="article-image-section"></div>
         </section>
       <section id="section-4">
           <div>Our Projects</div>
-          <div>Image Area</div>
+          <div class="article-image-section"></div>
         </section>
       <section id="section-5">
           <div>Our Team</div>
-          <div>Image Area</div>
+          <div class="article-image-section"></div>
         </section>
       <section id="section-5">
         <div class="footer">This is Footer</div>
@@ -113,6 +104,8 @@
     </section>
     </article>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="index.js"> </script>
 </body>
 </html>
