@@ -183,7 +183,7 @@ main > article[data-status="becoming-active-from-after"] {
   }
   
   main > article > section > div {
-    height: 40vh;
+    height: 40%;
     flex-flow: column wrap;
     font-size: 2rem;
   }
@@ -195,5 +195,10 @@ main > article[data-status="becoming-active-from-after"] {
   
   .article-div-button {
     font-size: 2rem;
+  }
+
+  /* visibility hidden on mobile devices */
+  .go-top {
+    visibility: hidden;
   }
 }
