@@ -46,13 +46,26 @@ const typed = new Typed('#type-space', {
   loop: true,
   loopCount: 200,
   fadeOut: true,
-  showCursor: false
+  showCursor: false,
   // cursorChar: '...'
 
 });
 
-const type = new Typed('#hmz-space', {
-  strings: ['Welcome!', 'Network Support!?', 'Desktop Support!?'],
+const typeA = new Typed('#a-space', {
+  strings: ['We are', 'Do you need'],
+  typeSpeed: 10,
+  startDelay: 0,
+  backDelay: 3800,
+  backSpeed: 0,
+  loop: true,
+  loopCount: 200,
+  fadeOut: true,
+  showCursor: false
+  // cursorChar: '...'
+});
+
+const typeB = new Typed('#b-space', {
+  strings: ['Network', 'Desktop', 'Field'],
   typeSpeed: 10,
   startDelay: 0,
   backDelay: 1000,
@@ -62,19 +75,43 @@ const type = new Typed('#hmz-space', {
   fadeOut: true,
   showCursor: false
   // cursorChar: '...'
-
 });
 
-const typing = new Typed('#htj-space', {
-  strings: ['Welkom!', 'Websites!?', 'Web apps!?', 'Web services!?'],
+const typeC = new Typed('#c-space', {
+  strings: ['Engineers.', 'support?'],
   typeSpeed: 10,
   startDelay: 0,
-  backDelay: 1000,
+  backDelay: 3800,
   backSpeed: 0,
   loop: true,
   loopCount: 200,
   fadeOut: true,
   showCursor: false
   // cursorChar: '...'
+});
 
+// const typingA = new Typed('#h-space', {
+//   strings: ['Web'],
+//   typeSpeed: 100,
+//   startDelay: 0,
+//   backDelay: 4000,
+//   backSpeed: 0,
+//   loop: true,
+//   loopCount: 200,
+//   // fadeOut: true,
+//   showCursor: false
+//   // cursorChar: '...'
+// });
+
+const typingB = new Typed('#t-space', {
+  strings: ['Websites!?', 'Web apps!?', 'Web services!?'],
+  typeSpeed: 100,
+  startDelay: 0,
+  backDelay: 1000,
+  backSpeed: 0,
+  loop: true,
+  loopCount: 200,
+  // fadeOut: true,
+  showCursor: false,
+  // cursorChar: '!?'
 });

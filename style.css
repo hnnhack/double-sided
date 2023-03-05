@@ -69,7 +69,7 @@ main > article > section > div {
   flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #00008b;
   /* border: 0.4rem dashed; */
@@ -96,6 +96,8 @@ main > article > section > .article-image-section {
   align-items: center;
   flex: auto;
   text-align: center;
+  width: 100%;
+  height: 20%;
 }
 
 /* home page gallery buttons  */
@@ -163,21 +165,22 @@ main > article[data-status="becoming-active-from-after"] {
   cursor: pointer;
 }
 
-/* Go Top Button  */
-.go-top {
+/* Scroll Up Button  */
+.scroll-up {
   background: transparent;
   color: #00008b;
   position: sticky;
   position: -webkit-sticky;
   /* these below 2 line has to be arrange */
-  top: 80%;
-  left: 95%;
+  top: 87%;
+  left: 92%;
   font-size: 2rem;
   text-decoration: none;
   padding: 1rem;
 }
 
 @media(max-width: 1200px) {  
+
   main > article > section {
     flex-direction: column-reverse;
   }
@@ -189,16 +192,21 @@ main > article[data-status="becoming-active-from-after"] {
   }
   
   .footer {
-    height: 30vh;
+    height: 45%;
+    width: 45%;
+    font-size: 1rem;
+    /* flex-direction: row-reverse; */
+    justify-content: space-around;
+    align-items: stretch;
     flex-flow: column wrap;
   }
   
   .article-div-button {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   /* visibility hidden on mobile devices */
-  .go-top {
+  .scroll-up {
     visibility: hidden;
   }
 }
