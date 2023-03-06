@@ -55,7 +55,7 @@ const typeA = new Typed('#a-space', {
   strings: ['We are', 'Do you need'],
   typeSpeed: 10,
   startDelay: 0,
-  backDelay: 3800,
+  backDelay: 3830,
   backSpeed: 0,
   loop: true,
   loopCount: 200,
@@ -78,7 +78,7 @@ const typeB = new Typed('#b-space', {
 });
 
 const typeC = new Typed('#c-space', {
-  strings: ['Engineers.', 'support?'],
+  strings: ['Engineers.', 'support!?'],
   typeSpeed: 10,
   startDelay: 0,
   backDelay: 3800,
@@ -104,10 +104,10 @@ const typeC = new Typed('#c-space', {
 // });
 
 const typingB = new Typed('#t-space', {
-  strings: ['Websites!?', 'Web apps!?', 'Web services!?'],
+  strings: ['Websites!?', 'Web apps!?', 'Web support!?'],
   typeSpeed: 100,
   startDelay: 0,
-  backDelay: 1000,
+  backDelay: 2000,
   backSpeed: 0,
   loop: true,
   loopCount: 200,
