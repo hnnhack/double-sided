@@ -1,3 +1,19 @@
+/* -- Mobile Nav Toggle -- */
+
+const nav = document.querySelector("nav");
+
+const handleNavToggle = () => {  
+  nav.dataset.transitionable = "true";
+  
+  nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
+}
+
+window.matchMedia("(max-width: 1000px)").onchange = e => {
+  nav.dataset.transitionable = "false";
+
+  nav.dataset.toggled = "false";
+};
+
 /* -- Carousel Navigation -- */
 
 let activeIndex = 0;

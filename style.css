@@ -1,3 +1,10 @@
+:root {
+  --background-color: #80ffd4;
+  --border-color: rgb(255, 255, 255, 0.1);
+  --highlight-color: rgb(126, 87, 194);
+  --yt-color: rgb(229, 57, 53);
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth !important; /* SCROLL UP behavior smooth */
@@ -7,6 +14,57 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100%;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  color: red;
+  background: transparent;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: orange;
+  transform: scale(0.97);
+}
+
+.menu-items {
+  width: 50%;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.menu-item {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #00008b;
+  color: #fff;
 }
 
 main > article {
@@ -25,7 +83,7 @@ main > article:first-child {
 
 /* beginning - from snap scroll */
 main > article > section {
-  height: 100vh;
+  height: 100vh; /* important*/
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -71,7 +129,6 @@ main > article > section > div {
   font-size: 2rem;
   font-weight: 700;
   color: #00008b;
-  /* border: 0.4rem dashed; */
   padding: 2rem;
   box-shadow: 4rem;
 }
@@ -169,7 +226,7 @@ main > article[data-status="becoming-active-from-after"] {
 }
 
 .scroll-up {
-  top: 87%;
+  top: 55%;
 }
 
 .close-button:hover, .scroll-up:hover {
@@ -184,14 +241,13 @@ main > article[data-status="becoming-active-from-after"] {
   gap: 1rem;
 }
 
-@media(max-width: 1000px) {  
-
+@media(max-width: 1000px) {
   main > article > section {
     flex-direction: column-reverse;
   }
   
   main > article > section > div {
-    height: 40%;
+    height: 46%;
     width: 90%;
     /* flex-flow: column wrap; */
     flex-direction: column;
@@ -216,11 +272,6 @@ main > article[data-status="becoming-active-from-after"] {
   .article-div-button {
     font-size: 1.2rem;
   }
-
-  /* visibility hidden on mobile devices */
-  /* .scroll-up {
-    visibility: hidden;
-  } */
 
   .paragraph-text{
     font-size: 14px;
