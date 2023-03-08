@@ -214,8 +214,8 @@ main > article[data-status="becoming-active-from-after"] {
   color: #00008b;
   position: sticky;
   position: -webkit-sticky;
-  font-size: 1.8rem;
-  padding: 0.8rem;
+  font-size: 1.5rem;
+  padding: 0.6rem 0.8rem;
   border-radius: 70%;
   cursor: pointer;
   left: 95%;
