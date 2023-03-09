@@ -106,19 +106,6 @@ const typeC = new Typed('#c-space', {
   // cursorChar: '...'
 });
 
-// const typingA = new Typed('#h-space', {
-//   strings: ['Web'],
-//   typeSpeed: 100,
-//   startDelay: 0,
-//   backDelay: 4000,
-//   backSpeed: 0,
-//   loop: true,
-//   loopCount: 200,
-//   // fadeOut: true,
-//   showCursor: false
-//   // cursorChar: '...'
-// });
-
 const typingB = new Typed('#t-space', {
   strings: ['Websites!?', 'Web apps!?', 'Web support!?'],
   typeSpeed: 100,

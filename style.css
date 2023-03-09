@@ -44,6 +44,9 @@ nav > div {
 
 .logo {
   cursor: pointer;
+  background: #80ffd4;
+  padding: 0.5rem;
+  justify-content: center;
 }
 
 .logo:hover {
@@ -60,6 +63,7 @@ nav > div {
 .menu-item {
   padding: 1rem;
   cursor: pointer;
+  background: #80ffd4;
 }
 
 .menu-item:hover {
@@ -103,20 +107,17 @@ main > article > section:nth-child(odd) > div {
 /* end - from snap scroll */
 
 main > article > section > div {
-  height: 90vh;
-  width: 45%;
+  height: 100vh;
+  width: 40%;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 2rem;
   color: #00008b;
-  border-radius: 3%;
+  border-radius: 0%;
   padding: 2rem;
   background-color: #fff;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -131,21 +132,26 @@ main > article > section > div {
   color: #00008b;
   padding: 2rem;
   box-shadow: 4rem;
+  border-radius: 0%;
 }
 
 /* image area  */
 main > article > section > .article-image-section {
-  /* background-image: url("https://qph.cf2.quoracdn.net/main-qimg-68b659aeaa28099560b1bd2992dff4af.webp"); */
-  background-image: url("https://www.lystloc.com/blog/wp-content/uploads/2022/12/ezgif.com-gif-maker-55.webp");
-}
-
-main > article > section > .article-image-section {
-  background-position: center;
+  background-image: url("images/engineers.png");
   background-size: cover;
+  background-position: center;
+  width: 60%;
 }
-/* end image area  */
 
 /* home page gallery text  */
+.home-galleries {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 80%;
+  flex-grow: 0;
+}
+
 .home-gallery{
   display: flex;
   justify-content: space-around;
@@ -153,7 +159,7 @@ main > article > section > .article-image-section {
   flex: auto;
   text-align: center;
   width: 100%;
-  height: 20%;
+  height: 10%;
 }
 
 /* home page gallery buttons  */
@@ -161,11 +167,11 @@ main > article > section > .article-image-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 20%;
+  width: 90%;
+  height: 15%;
   padding: 1rem;
   font-size: 2rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   cursor: pointer;
   background: #80ffd4;
   color: #00008b;
@@ -174,7 +180,6 @@ main > article > section > .article-image-section {
   inset 0 -3em 3em rgba(0, 0, 0, 0.1), 
   0 0 0 2px rgb(255, 255, 255),
   0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-
 }
 
 main > article:nth-child(odd) {
@@ -208,7 +213,6 @@ main > article[data-status="becoming-active-from-after"] {
   transition: none;
 }
 
-/* close-button  */
 .sticky-item {
   background: transparent;
   color: #00008b;
@@ -219,6 +223,7 @@ main > article[data-status="becoming-active-from-after"] {
   border-radius: 70%;
   cursor: pointer;
   left: 95%;
+  z-index: 10;
 }
 
 .close-button {
@@ -247,14 +252,17 @@ main > article[data-status="becoming-active-from-after"] {
   }
   
   main > article > section > div {
-    height: 46%;
-    width: 90%;
-    /* flex-flow: column wrap; */
+    height: 50%;
+    width: 100%;
     flex-direction: column;
-    font-size: 2rem;
     font-size: 1rem;
   }
   
+  main > article > section > .article-image-section {
+    height: 50%;
+    /* width: auto; */
+  
+  }
   .footer {
     height: 45%;
     width: 45%;
@@ -267,6 +275,7 @@ main > article[data-status="becoming-active-from-after"] {
   .sticky-item{
     font-size: 1.2rem;
     padding: 0.5rem;
+    z-index: 10;
   }
   
   .article-div-button {
@@ -277,4 +286,5 @@ main > article[data-status="becoming-active-from-after"] {
     font-size: 14px;
     font-weight: normal;
   }
+
 }
