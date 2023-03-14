@@ -11,7 +11,7 @@
 <body>
   <main>
     <article data-index="0" data-status="active">
-      <nav>
+      <nav data-toggled="false" data-transitionable="false">
         <div>
           <div class="logo">
             Logo &nbsp;
@@ -26,9 +26,13 @@
             Software
           </a>
         </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+          <span>Menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>  
       <section>
-        <div>
+        <div class="gallery">
           <div class="home-galleries">
             <span class="home-gallery" id="a-space"></span> 
             <span class="home-gallery" id="b-space"></span> 
@@ -39,8 +43,7 @@
             &nbsp;meer info
           </div>
         </div>
-        <div>
-          <!-- <span class="home-gallery" id="h-space"></span> -->
+        <div class="gallery">
           <span class="home-gallery" id="t-space"></span>
           <div class="article-div-button" onclick="handleRightClick()">
             meer info&nbsp;
@@ -55,7 +58,7 @@
       </section> 
     </article>
     <article data-index="1" data-status="inactive">
-      <nav>
+      <nav data-toggled="false" data-transitionable="false">
         <div>
           <div class="logo" onclick="handleLeftClick()">
             Logo &nbsp;
@@ -63,16 +66,16 @@
           </div>
         </div>
         <div class="menu-items">
-          <a class="menu-item" href="#section-1">
+          <a class="menu-item" href="#section-1a">
             About Us
           </a>
-          <a class="menu-item" href="#section-2">
+          <a class="menu-item" href="#section-2a">
             Our Projects
           </a>
-          <a class="menu-item" href="#section-3">
+          <a class="menu-item" href="#section-3a">
             Our Team
           </a>
-          <a class="menu-item" href="#section-4">
+          <a class="menu-item" href="#section-4a">
             Contact Us
           </a>
         </div>
@@ -103,7 +106,7 @@
         <i class="fas fa-chevron-up"></i>
       </a>
       <!-- scroll top button end  -->
-      <section id="section-1">
+      <section id="section-1a">
         <div>
           <div>
             About Us
@@ -123,7 +126,7 @@
         </div>
         <div class="article-image-section"></div>
       </section>
-      <section id="section-2">
+      <section id="section-2a">
           <div>
             <div>
               Our Projects
@@ -143,7 +146,7 @@
           </div>
           <div class="article-image-section"></div>
         </section>
-      <section id="section-3">
+      <section id="section-3a">
         <div>
           <div>
             Our Team
@@ -163,7 +166,7 @@
         </div>
         <div class="article-image-section"></div>
       </section>
-      <section id="section-4">
+      <section id="section-4a">
         <div>
           <div>
             Abonneren
@@ -210,7 +213,7 @@
     </section>
     </article>
     <article data-index="2" data-status="inactive">
-      <nav>
+      <nav data-toggled="false" data-transitionable="false">
         <div>
           <div class="logo" onclick="handleRightClick()">
             Logo &nbsp;
@@ -261,7 +264,7 @@
       <section id="section-1">
         <div>
           <div>
-            Welkom!
+            About Us
           </div> 
           <div class="paragraph-text">
             <div>
@@ -281,7 +284,7 @@
       <section id="section-2">
         <div>
           <div>
-            Welkom!
+            Our Projects
           </div> 
           <div class="paragraph-text">
             <div>
@@ -301,7 +304,7 @@
       <section id="section-3">
         <div>
           <div>
-            Welkom!
+            Our Team
           </div> 
           <div class="paragraph-text">
             <div>
@@ -321,7 +324,7 @@
       <section id="section-4">
         <div>
           <div>
-            Welkom!
+            Contact Us
           </div> 
           <div class="paragraph-text">
             <div>

@@ -27,10 +27,9 @@ nav {
   justify-content: space-between;
   height: 4rem;
   width: 100%;
-  font-size: 2rem;
   position: sticky;
   top: 0;
-  color: red;
+  color: #00008b;
   background: transparent;
 }
 
@@ -44,9 +43,9 @@ nav > div {
 
 .logo {
   cursor: pointer;
-  background: #80ffd4;
   padding: 0.5rem;
   justify-content: center;
+  font-size: 2rem;
 }
 
 .logo:hover {
@@ -57,18 +56,34 @@ nav > div {
 .menu-items {
   width: 60%;
   font-size: 1.2rem;
+  /* position: sticky; */
   justify-content: center;
+  z-index: 2;
 }
 
 .menu-item {
   padding: 1rem;
   cursor: pointer;
-  background: #80ffd4;
 }
 
 .menu-item:hover {
   background: #00008b;
   color: #fff;
+}
+
+#nav-toggle-button { 
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  gap: 0.8rem;
+  height: 100%;
+  justify-content: center;
+  outline: none;
+  padding: 0rem 3rem;
+  position: relative;
+  z-index: 3;
 }
 
 main > article {
@@ -80,11 +95,6 @@ main > article {
   transition: transform 400ms ease;  
 }
 
-main > article:first-child {
-  background: #80ffd4;
-  color: #7c68ee;
-}
-
 /* beginning - from snap scroll */
 main > article > section {
   height: 100vh; /* important*/
@@ -92,19 +102,9 @@ main > article > section {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  background: #7c68ee;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
-
-main > article > section:nth-child(odd) {
-  background: #80ffd4;
-}
-
-main > article > section:nth-child(odd) > div {
-  color: #7c68ee
-}
-/* end - from snap scroll */
 
 main > article > section > div {
   height: 100vh;
@@ -114,9 +114,9 @@ main > article > section > div {
   justify-content: space-around;
   align-items: center;
   font-size: 2rem;
-  color: #00008b;
+  color: #000;
   border-radius: 0%;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: #fff;
 }
 
@@ -130,6 +130,7 @@ main > article > section > div {
   font-size: 2rem;
   font-weight: 700;
   color: #00008b;
+  background: #F6F7F9;
   padding: 2rem;
   box-shadow: 4rem;
   border-radius: 0%;
@@ -144,12 +145,15 @@ main > article > section > .article-image-section {
 }
 
 /* home page gallery text  */
+.gallery {
+  justify-content: space-between;
+}
+
 .home-galleries {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  height: 80%;
-  flex-grow: 0;
+  justify-content: flex-start;
+  height: 25%;
 }
 
 .home-gallery{
@@ -167,19 +171,23 @@ main > article > section > .article-image-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 65%;
   height: 15%;
   padding: 1rem;
-  font-size: 2rem;
-  /* font-weight: 700; */
+  font-size: 1.3rem;
   cursor: pointer;
-  background: #80ffd4;
-  color: #00008b;
+  background: #00008b;
+  color: #fff;
   border-radius: 5%;
   box-shadow: 
   inset 0 -3em 3em rgba(0, 0, 0, 0.1), 
   0 0 0 2px rgb(255, 255, 255),
   0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.article-div-button:hover {
+  background: #0564DE;
+  color: #F6F7F9;
 }
 
 main > article:nth-child(odd) {
@@ -226,20 +234,21 @@ main > article[data-status="becoming-active-from-after"] {
   z-index: 10;
 }
 
+.sticky-item:hover {
+  background: #00008b;
+  color: #fff;
+}
+
 .close-button {
   top: 5%;
 }
 
 .scroll-up {
-  top: 55%;
-}
-
-.close-button:hover, .scroll-up:hover {
-  background: #80ffd4;
+  top: 90%;
 }
 
 .paragraph-text{
-  font-size: 18px;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -247,6 +256,47 @@ main > article[data-status="becoming-active-from-after"] {
 }
 
 @media(max-width: 1000px) {
+  nav {
+    justify-content: space-between;  
+    background: #00008b;
+    color: #fff;
+    /* z-index: 50; */
+  }
+  
+  nav[data-toggled="true"] > .menu-items {  
+    transform: translateY(0%);
+  }
+
+  nav[data-transitionable="true"] > .menu-items {
+    transition: transform 400ms ease;
+  }
+
+  .logo {
+    z-index: 3;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    transform: translateY(-100%);
+    background: #00008b;
+    color: #fff;
+    font-size: 3rem;
+    top: 4rem;
+  }
+
+  #nav-toggle-button {
+    display: flex;
+    background: #00008b;
+    color: #fff;
+  }
+
+  .gallery {
+    z-index: -1;
+  }
+
   main > article > section {
     flex-direction: column-reverse;
   }
@@ -276,6 +326,11 @@ main > article[data-status="becoming-active-from-after"] {
     font-size: 1.2rem;
     padding: 0.5rem;
     z-index: 10;
+  }
+
+  .close-button {
+    top: 10%;
+    padding: 0.5rem 0.7rem;
   }
   
   .article-div-button {
